@@ -725,6 +725,7 @@ static WizViewManager *wizViewManagerInstance = NULL;
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     int screenHeight;
     int screenWidth;
+	/*
     if (UIDeviceOrientationIsLandscape(self.viewController.interfaceOrientation)) {
         if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
             screenHeight = (int) screenRect.size.height;
@@ -734,9 +735,10 @@ static WizViewManager *wizViewManagerInstance = NULL;
             screenWidth = (int) screenRect.size.height;
         }
     } else {
+    */
         screenHeight = (int) screenRect.size.height;
         screenWidth = (int) screenRect.size.width;
-    }
+    //}
     
     // Define vars
     int top;
